@@ -1,0 +1,86 @@
+/* FUNCTIONALITY:
+/*This portion deals with the functionality of the site.  This includes links,
+/*buttons, etc.
+*/
+
+/*button*/
+button.button{
+  position: relative;
+  top: 10px;
+  background-color: #9e9e9e; color: black;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+}
+
+/*site-wide navigation*/
+a.nav:link{
+  text-decoration: none;
+  color:white;
+}
+a.nav:visited{
+  color:white;
+}
+
+/*page navigation*/
+#bookmark{
+  margin-top: 10px;
+}
+a.bookmark:link{
+  text-decoration: none;
+  color:black;
+}
+a.bookmark:visited{
+  color:black;
+}
+
+/*CONTENT:
+/*This portion deals with the look and feel of the actual content displayed on
+/*the screen.  This includes color, sizing, locations, etc.
+*/
+#title{
+  text-align:center;
+}
+
+body{
+  background-image: url("img1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#body{
+  background-color:#3d3d3d;
+  margin-left:80;
+  margin-right:80;
+  margin-top:80;
+  padding: 30px 30px 30px 30px;
+}
+
+/*paragraphs*/
+.solid{
+  border-style: solid;
+  background-color: #e7e7e7; color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Use these to create a grid with 2 columns*/
+.left{
+  position: absolute;
+  margin-right:50%;
+
+  padding: 30px 30px 30px 30px;
+}
+.right{
+  position: relative;
+  margin-top:80;
+  margin-left: 70%;
+
+  padding: 30px 30px 30px 30px;
+}

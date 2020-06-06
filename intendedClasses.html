@@ -1,0 +1,172 @@
+<!DOCTYPE>
+<html>
+<head>
+
+  <style>
+
+    /*link*/
+    a:link{
+      text-decoration: none;
+      color:white;
+    }
+    a:visited{
+      color:white;
+    }
+
+    #body{
+      background-color:#3d3d3d;
+      margin-left:100;
+      margin-right:100;
+      margin-top:80;
+      padding: 30px 30px 30px 30px;
+    }
+    /*paragraphs*/
+
+    /*title*/
+    #title{
+      text-align:center;
+    }
+
+    /*button*/
+    button.button{
+      position: relative;
+      top: 10px;
+      background-color: #9e9e9e; color: black;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      float: left;
+    }
+    button.this-button{
+      position: relative;
+      top: 10px;
+      background-color: #d52121; color: black;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      float: left;
+    }
+
+    /*body*/
+    body{
+      background-image: url("img1.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .left{
+      position: absolute;
+      margin-right:50%;
+
+      padding: 30px 30px 30px 30px;
+    }
+    .right{
+      position: relative;
+      margin-top:80;
+      margin-left: 70%;
+
+      padding: 30px 30px 30px 30px;
+    }
+
+    #body{
+      margin-left:80;
+      margin-right:80;
+      margin-top:80;
+      padding: 30px 30px 30px 30px;
+    }
+
+    #title{
+      text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!--links in top left  corner-->
+  <div>
+    <a href= "https://www.linkedin.com/in/anthony-shara-813678140">
+      <img border="0" alt="linkedin" src="linkedInLogo.png" width="25" height="25">
+    </a>
+    <a href= "https://github.com/tonyshara/myGitHub">
+      <img border="0" alt="github" src="github.png" width="25" height="25">
+    </a>
+  </div>
+
+  <div class="button">
+    <button type="button" class="button"><a href="home.html">home</a></button>
+    <button type="button" class="this-button"><a href="intendedClasses.html" class="nav">intended classes</a></button>
+    <button type="button" class="button"><a href="myProjects.html" class="nav">my projects</a></button>
+  </div>
+
+  <div id="body">
+
+    <div>
+      <p>
+        <h1 id="title">
+          My Interests
+        </h1>
+      </p>
+    </div>
+
+      <div>
+        <div class="left">
+          <h2><a href = "https://www2.eecs.berkeley.edu/Courses/EE128/" style="color:white">
+            <strong>EE 128</strong></a> : Feedback Control</h2>
+        </div>
+        <div class="right">
+          <img src="intended-classes/cf2.jpg" alt="drone flying"width="100%"></img>
+        </div>
+      </div>
+
+      <div>
+        <div class="left">
+          <h2><a href = "https://www2.eecs.berkeley.edu/Courses/EE16B/">
+            <strong>EE 196</strong></a> : Mechatronics lab</h2>
+        </div>
+        <div class="right">
+          <img src="intended-classes/mc1.jpg" alt="surgical robot"width="100%"></img>
+        </div>
+      </div>
+
+      <div>
+        <div class="left">
+          <h2><a href = "https://www2.eecs.berkeley.edu/Courses/EE16B/">
+            <strong>CS 170</strong></a> : Algorithms</h2>
+        </div>
+        <div class="right">
+          <img src="intended-classes/alg1.png" alt="surgical robot"width="100%"></img>
+        </div>
+      </div>
+
+      <div>
+        <div class="left">
+          <h2><a href = "https://www2.eecs.berkeley.edu/Courses/CS188/">
+            <strong>CS 188</strong></a> : AI</h2>
+        </div>
+        <div class="right">
+          <img src="intended-classes/ai1.jpg" alt="surgical robot"width="100%"></img>
+        </div>
+      </div>
+
+      <div>
+        <div class="left">
+          <h2><a href = "https://www2.eecs.berkeley.edu/Courses/EECS106A/">
+            EECS 106a</a> : Intro to Robotics</h2>
+        </div>
+        <div class="right">
+          <img src="intended-classes/rob1.jpg" alt="surgical robot"width="100%"></img>
+        </div>
+      </div>
+
+  </div>
+
+</body>
+</html>
