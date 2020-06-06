@@ -1,0 +1,258 @@
+<!DOCTYPE>
+<html>
+  <head>
+
+    <!--classes-->
+    <style>
+
+    /*site navigation*/
+    a.nav:link{
+      text-decoration: none;
+      color:black;
+    }
+    a.nav:visited{
+      color:white;
+    }
+
+    /*page navigation*/
+    #bookmark{
+      margin-top: 10px;
+    }
+    a.bookmark:link{
+      text-decoration: none;
+      color:black;
+    }
+    a.bookmark:visited{
+      color:black;
+    }
+
+    #body{
+      background-color:#3d3d3d;
+      margin-left:80;
+      margin-right:80;
+      margin-top:80;
+      padding: 30px 30px 30px 30px;
+    }
+
+    /*paragraphs*/
+    .solid{
+      border-style: solid;
+      background-color: #e7e7e7; color: black;
+      text-align: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    /*title*/
+    #title{
+      text-align:center;
+    }
+
+    /*button*/
+    button.button{
+      position: relative;
+      top: 10px;
+      background-color: #9e9e9e; color: black;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      float: left;
+    }
+    button.this-button{
+      position: relative;
+      top: 10px;
+      background-color: #d52121; color: black;
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      float: left;
+    }
+
+
+
+
+    /*body*/
+    body{
+      background-image: url("img1.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <!--linkedin and github links in top left corner-->
+    <div>
+      <a href= "https://www.linkedin.com/in/anthony-shara-813678140">
+        <img border="0" alt="linkedin" src="linkedInLogo.png" width="25" height="25">
+      </a>
+      <a href= "https://github.com/tonyshara/myGitHub">
+        <img border="0" alt="github" src="github.png" width="25" height="25">
+      </a>
+    </div>
+
+    <!--links in top left corner-->
+    <div class="button">
+      <button type="button" class="this-button"><a href="home.html" class="nav">home</a></button>
+      <button type="button" class="button"><a href="intendedClasses.html" class="nav">intended classes</a></button>
+      <button type="button" class="button"><a href="myProjects.html" class="nav">my projects</a></button>
+    </div>
+
+    <div id="body">
+
+      <div>
+        <p>
+          <h1 id="title">
+            Tony Shara
+          </h1>
+        </p>
+      </div>
+
+      <img src="home/mainimg1.jpg" style="display:block; margin: 0px auto;">
+
+      <div class = "solid" style = "margin-top:15px">
+        <div id="bookmark">
+          <button type="button"><a href="#1" class="bookmark">Completed Classes</a></button>
+          <button type="button"><a href="#2" class="bookmark">Skills</a></button>
+        </div>
+        <div>
+        <b><h1>About Me</h1></b>
+        <h4 style = "text-align:left">
+          <p >
+            Electrical Engineering and Computer Science Major at UC Berkeley. Software design intern for a SaaS start up
+            company based in Orange County, California and Bangalore, India.
+            <br />
+            <br />
+            Lorem ipsum dolor sit amet, voluptaria liberavisse sea id, cum partiendo torquatos id. Qui error tollit an. Cum
+            te modus justo imperdiet, duo ne unum soluta molestie. Eirmod veritus sensibus his te, pro quidam iriure inermis id.
+            Omnes epicurei intellegebat in sed, eu dicit tempor his, probatus facilisi vis ei. Fugit nostro offendit ad vis.
+            <br />
+            <br />
+            Ius invidunt platonem ad, duo no aeterno nominati conceptam. Ex eos docendi albucius signiferumque, mei vide erat
+            conceptam ne. No est hinc decore viderer, in fabellas vituperata per. His veritus temporibus te, quo ex augue consulatu.
+          </p>
+        </h4>
+        </div>
+        <hr>
+
+        <!--completed classes-->
+        <div class = "list">
+          <b> <h1 id="1">Some classes I have taken:</h1> </b>
+            <h3> Fall 2017 </h3>
+            <ul>
+              <li>
+                <a href = "https://www2.eecs.berkeley.edu/Courses/EE16A/">
+                  EE 16a: NAME
+                </a>
+              </li>
+              <li>
+                <a href = "https://www2.eecs.berkeley.edu/Courses/CS61A/">
+                  CS 61a
+                </a>
+              </li>
+              <li>
+                Physics 7a: NAME
+              </li>
+            </ol>
+            <h3> Spring 2018 </h3>
+            <ol>
+              <li>
+                <a href = "https://www2.eecs.berkeley.edu/Courses/EE16B/">
+                  EE 16b: NAME
+                </a>
+              </li>
+              <li>
+                <a href = "https://www2.eecs.berkeley.edu/Courses/CS61B/">
+                  CS 61b: Data Structures
+                </a>
+              </li>
+            </ul>
+            <span style="color:red">
+              <h3> Fall 2018 </h3>
+              <ul>
+                <li>
+                  <a href = "https://www2.eecs.berkeley.edu/Courses/EE16C/">
+                    CS 61c: NAME
+                  </a>
+                </li>
+                <li>
+                  <a href = "https://www2.eecs.berkeley.edu/Courses/CS70/">
+                    CS 70: NAME
+                  </a>
+                </li>
+              </ul>
+            </span>
+          </div>
+          <hr>
+
+          <!--skills-->
+          <div>
+            <b><h1 id="2">Skills</h1></b>
+            <h4>
+            <ul>
+              <li>
+                Python
+              </li>
+              <li>
+                Java
+              </li>
+              <li>
+                SQL
+              </li>
+              <li>
+                Ruby
+              </li>
+              <li>
+                Ruby on Rails
+              </li>
+                <li>
+                Java Script
+              </li>
+              <li>
+                HTML
+              </li>
+              <li>
+                CSS
+              </li>
+              <li>
+                Software Development
+              </li>
+              <li>
+                CAD
+              </li>
+              <li>
+                Circuit Design
+              </li>
+              <li>
+                Leadership
+              </li>
+              <li>
+                Microsoft Office
+              </li>
+              <li>
+                Team work
+              </li>
+            </h4>
+          </div>
+          <hr>
+
+          <!--experience-->
+
+      </div>
+
+      <div>
+        <img src = "img3.jpg" style="margin-top:10px; border-style:solid;">
+      </div>
+
+    </div>
+
+  </body>
+</html>
