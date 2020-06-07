@@ -27,17 +27,18 @@
     }
 
     #body{
-      background-color:#3d3d3d;
+      background-color:#fff;
       margin-left:80;
       margin-right:80;
       margin-top:80;
       padding: 30px 30px 30px 30px;
+      font: 14px arial, sans-serif;
     }
 
     /*paragraphs*/
     .solid{
       border-style: solid;
-      background-color: #e7e7e7; color: black;
+      background-color: #e7e7e7;
       text-align: left;
       padding-left: 10px;
       padding-right: 10px;
@@ -46,13 +47,15 @@
     /*title*/
     #title{
       text-align:center;
+      font: 56px arial, sans-serif;
     }
 
     /*button*/
     button.button{
       position: relative;
       top: 10px;
-      background-color: #9e9e9e; color: black;
+      /* background-color: #9e9e9e; color: black; */
+      background-color: black;
       border: none;
       color: black;
       padding: 15px 32px;
@@ -62,10 +65,12 @@
       font-size: 16px;
       float: left;
     }
+
     button.this-button{
       position: relative;
       top: 10px;
-      background-color: #d52121; color: black;
+      /* background-color: #d52121; color: black; */
+      background-color: blue;
       border: none;
       padding: 15px 32px;
       text-align: center;
@@ -74,16 +79,50 @@
       font-size: 16px;
       float: left;
     }
+/* Menu Bar Configurations */
+    ul {
+      font: 14px arial, sans-serif;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
 
+    li {
+      font: 14px arial, sans-serif;
+      float: left;
+    }
 
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-
+    /* Change the link color on hover */
+    li a:hover {
+      background-color: #004087;
+    }
+    .active {
+      background-color: #E0B100;
+    }
+    .box{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px 2em;
+    }
+    .box :first-child {
+      align-self: center;
+    }
     /*body*/
-    body{
+    /* body{
       background-image: url("img1.jpg");
       background-size: cover;
       background-attachment: fixed;
-    }
+    } */
 
     </style>
   </head>
@@ -99,16 +138,14 @@
       </a>
     </div>
 
-    <!--links in top left corner-->
-    <div class="button">
-      <button type="button" class="this-button"><a href="home.html" class="nav">home</a></button>
-      <button type="button" class="button"><a href="intendedClasses.html" class="nav">intended classes</a></button>
-      <button type="button" class="button"><a href="myProjects.html" class="nav">my projects</a></button>
-      <button type="button" class="button"><a href="index.html" class="nav">back to main</a></button>
-    </div>
+    <!--Menu Bar-->
+    <ul>
+      <li><a class="active" href="home.html">Home</a></li>
+      <li><a href="xintendedClasses.html">Classes</a></li>
+      <li><a href="myProjects.html">Contact</a></li>
+    </ul>
 
-    <div id="body">
-
+    <div id="">
       <div>
         <p>
           <h1 id="title">
@@ -117,13 +154,9 @@
         </p>
       </div>
 
-      <img src="home/mainimg1.jpg" style="display:block; margin: 0px auto;">
+      <!-- <img src="home/mainimg1.jpg" style="display:block; margin: 0px auto;"> -->
 
-      <div class = "solid" style = "margin-top:15px">
-        <div id="bookmark">
-          <button type="button"><a href="#1" class="bookmark">Completed Classes</a></button>
-          <button type="button"><a href="#2" class="bookmark">Skills</a></button>
-        </div>
+      <div style = "margin-top:15px" id="body">
         <div>
         <b><h1>About Me</h1></b>
         <h4 style = "text-align:left">
@@ -145,114 +178,101 @@
         <hr>
 
         <!--completed classes-->
-        <div class = "list">
-          <b> <h1 id="1">Some classes I have taken:</h1> </b>
-            <h3> Fall 2017 </h3>
-            <ul>
-              <li>
-                <a href = "https://www2.eecs.berkeley.edu/Courses/EE16A/">
-                  EE 16a: NAME
-                </a>
-              </li>
-              <li>
-                <a href = "https://www2.eecs.berkeley.edu/Courses/CS61A/">
-                  CS 61a
-                </a>
-              </li>
-              <li>
-                Physics 7a: NAME
-              </li>
-            </ol>
-            <h3> Spring 2018 </h3>
-            <ol>
-              <li>
-                <a href = "https://www2.eecs.berkeley.edu/Courses/EE16B/">
-                  EE 16b: NAME
-                </a>
-              </li>
-              <li>
-                <a href = "https://www2.eecs.berkeley.edu/Courses/CS61B/">
-                  CS 61b: Data Structures
-                </a>
-              </li>
-            </ul>
-            <span style="color:red">
-              <h3> Fall 2018 </h3>
-              <ul>
-                <li>
-                  <a href = "https://www2.eecs.berkeley.edu/Courses/EE16C/">
-                    CS 61c: NAME
-                  </a>
-                </li>
-                <li>
-                  <a href = "https://www2.eecs.berkeley.edu/Courses/CS70/">
-                    CS 70: NAME
-                  </a>
-                </li>
-              </ul>
-            </span>
-          </div>
+        <b> <h1>Classes</h1> </b>
+        <div class = "box">
+            <div>
+              <b><h1>EE:</h1></b>
+              <div class="">
+                EE 16A
+              </div>
+              <div class="">
+                EE 16B
+              </div>
+              <div class="">
+                EE 118
+              </div>
+              <div class="">
+                EE 120
+              </div>
+            </div>
+            <div>
+              <b><h1>CS:</h1></b>
+              <div class="">
+                CS 61A
+              </div>
+              <div class="">
+                CS 61 B
+              </div>
+              <div class="">
+                CS 61C
+              </div>
+              <div class="">
+                CS 189
+              </div>
+            </div>
+            <div>
+              <b><h1>EECS:</h1></b>
+              <div class="">
+                EECS 106A
+              </div>
+              <div class="">
+                EECS 149
+              </div>
+            </div>
+            <div>
+              <b><h1>Physics:</h1></b>
+              <div class="">
+                Physics 7A
+              </div>
+              <div class="">
+                Physics 7B
+              </div>
+              <div class="">
+                Physics 7C
+              </div>
+            </div>
+        </div>
           <hr>
-
           <!--skills-->
-          <div>
-            <b><h1 id="2">Skills</h1></b>
-            <h4>
-            <ul>
-              <li>
-                Python
-              </li>
-              <li>
-                Java
-              </li>
-              <li>
-                SQL
-              </li>
-              <li>
-                Ruby
-              </li>
-              <li>
-                Ruby on Rails
-              </li>
-                <li>
-                Java Script
-              </li>
-              <li>
-                HTML
-              </li>
-              <li>
-                CSS
-              </li>
-              <li>
-                Software Development
-              </li>
-              <li>
-                CAD
-              </li>
-              <li>
-                Circuit Design
-              </li>
-              <li>
-                Leadership
-              </li>
-              <li>
-                Microsoft Office
-              </li>
-              <li>
-                Team work
-              </li>
-            </h4>
+          <b> <h1>Skills</h1> </b>
+          <div class="box">
+            <div>
+            <b><h1>Software:</h1></b>
+            <div class="">
+              Python
+            </div>
+            <div class="">
+              C/C++
+            </div>
+            <div class="">
+              Java
+            </div>
+            </div>
+          <div class="">
+            <b><h1>Software:</h1></b>
+            <div class="">
+              Python
+            </div>
+            <div class="">
+              C/C++
+            </div>
+            <div class="">
+              Java
+            </div>
           </div>
-          <hr>
-
-          <!--experience-->
-
+          <div class="">
+            <b><h1>Software:</h1></b>
+            <div class="">
+              Python
+            </div>
+            <div class="">
+              C/C++
+            </div>
+            <div class="">
+              Java
+            </div>
+          </div>
       </div>
-
-      <div>
-        <img src = "img3.jpg" style="margin-top:10px; border-style:solid;">
-      </div>
-
     </div>
 
   </body>
